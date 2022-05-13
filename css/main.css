@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.body {
+  display: grid;
+  grid-template-areas: "header"
+ "main"
+ "footer";
+  background-color: aliceblue; }
+  .body #menu {
+    background-color: burlywood;
+    font-family: 'Josefin Slab', serif; }
+    .body #menu li {
+      font-weight: 800;
+      color: black;
+      font-size: 20px; }
+  .body .main {
+    background-color: antiquewhite; }
+    .body .main .vacio {
+      background-image: linear-gradient(rgba(16, 16, 16, 0.264), rgba(16, 16, 16, 0.461)), url(../img/fondo-grande.jpg);
+      background-size: cover;
+      max-width: 100%;
+      background-position: center center;
+      display: grid;
+      height: 400px; }
+    .body .main .content {
+      background-color: antiquewhite;
+      display: grid;
+      font-family: 'Oswald', sans-serif;
+      min-height: 500px; }
+      .body .main .content .info-content {
+        display: grid;
+        background-color: antiquewhite; }
+        .body .main .content .info-content .titulo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Josefin Slab', serif;
+          font-weight: 900;
+          min-height: 40px;
+          margin-top: 10px; }
+        .body .main .content .info-content .parrafo {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          font-size: 19px; }
+        .body .main .content .info-content .maps {
+          display: flex;
+          width: 400px;
+          height: 400px;
+          margin: auto; }
+        .body .main .content .info-content .tel {
+          display: flex;
+          margin: auto;
+          margin-bottom: 10px;
+          text-decoration: none;
+          color: black; }
+      .body .main .content .info-content-dos {
+        display: grid;
+        grid-template-areas: "titulo titulo titulo titulo"
+ ".      jue    vie         ."
+ ".      sab    dom         .";
+        margin: 10px;
+        margin-bottom: 80px;
+        justify-content: center; }
+        .body .main .content .info-content-dos .titulo {
+          font-family: 'Josefin Slab', serif;
+          grid-area: titulo;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700; }
+        .body .main .content .info-content-dos .jue {
+          grid-area: jue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: solid 1px black;
+          min-width: 200px;
+          border-top-left-radius: 10px;
+          text-decoration: none;
+          color: black; }
+        .body .main .content .info-content-dos .vie {
+          grid-area: vie;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: solid 1px black;
+          min-width: 200px;
+          border-top-right-radius: 10px;
+          text-decoration: none;
+          color: black; }
+        .body .main .content .info-content-dos .sab {
+          grid-area: sab;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: solid 1px black;
+          min-width: 200px;
+          border-bottom-left-radius: 10px;
+          text-decoration: none;
+          color: black; }
+        .body .main .content .info-content-dos .dom {
+          grid-area: dom;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: solid 1px black;
+          min-width: 200px;
+          border-bottom-right-radius: 10px;
+          text-decoration: none;
+          color: black; }
+      .body .main .content .info-content-tres {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .body .main .content .info-content-tres .titulo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Josefin Slab', serif;
+          font-weight: 900;
+          min-height: 40px;
+          grid-area: titulo; }
+        .body .main .content .info-content-tres form {
+          width: 500px; }
+          .body .main .content .info-content-tres form label {
+            display: block; }
+          .body .main .content .info-content-tres form p {
+            padding: 1em; }
+          .body .main .content .info-content-tres form button, .body .main .content .info-content-tres form input {
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: #fff;
+            border-bottom: 2px solid #ddaa67; }
+          .body .main .content .info-content-tres form button {
+            background: burlywood;
+            border: 0;
+            text-transform: uppercase;
+            padding: 1em; }
+  .body footer {
+    background-color: burlywood;
+    height: 100%;
+    padding: 15px; }
+    .body footer .text {
+      color: black; }
+
+    .img-tres {
+        max-width: 450px;
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Josefin Slab', serif;
+        font-weight: 900;
+        min-height: 40px;
+        margin-top: 10px; }
+    .parrafo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 19px; }  
+
+@media screen and (min-width: 800px) {
+  .body .main .content .info-content-tres form button:hover,
+  .body .main .content .info-content-tres form button:focus {
+    background: #daa969;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0; }
+  .body .main .content .info-content-dos .jue:hover {
+    background-color: burlywood;
+    transition: .3s; }
+  .body .main .content .info-content-dos .vie:hover {
+    background-color: burlywood;
+    transition: .3s; }
+  .body .main .content .info-content-dos .sab:hover {
+    background-color: burlywood;
+    transition: .3s; }
+  .body .main .content .info-content-dos .dom:hover {
+    background-color: burlywood;
+    transition: .3s; }
+  .body .main .vacio {
+    height: 600px; } }
+
+@media screen and (min-width: 950px) {
+  .body .main .vacio {
+    height: 700px; } }
+

@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+.body{
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    
+    background-color: aliceblue;
+    
+    #menu{
+        background-color: burlywood;
+        font-family: 'Josefin Slab', serif;
+    
+    
+        li{
+        font-weight: 800;
+        color: black;
+        font-size: 20px;
+        }
+    }
+
+
+    .main{
+        background-color: antiquewhite;
+
+
+        .vacio{
+            background-image:linear-gradient(rgba(16, 16, 16, 0.264), rgba(16, 16, 16, 0.461)), url(../img/fondo-grande.jpg) ;
+            background-size: cover;
+            max-width: 100%;
+            background-position: center center;
+            display: grid;
+            height: 400px;
+        }
+
+
+
+
+
+        .content{
+            background-color: antiquewhite;
+            display: grid;
+            font-family: 'Oswald', sans-serif;
+            min-height: 500px;
+            
+        
+
+
+              
+
+
+            .info-content{
+                display: grid;
+                background-color: antiquewhite;
+
+
+                .titulo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Josefin Slab', serif;
+                    font-weight: 900;
+                    min-height: 40px;
+                    margin-top: 10px;
+                }
+                .parrafo{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 19px;
+                }
+                .maps{
+                    display: flex;
+                    width: 400px;
+                    height: 400px;
+                    margin: auto;
+                }
+                .tel{
+                    display: flex;
+                    margin: auto;
+                    margin-bottom: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+
+            .info-content-dos{
+                display: grid;
+                grid-template-areas: "titulo titulo titulo titulo"
+                                     ".      jue    vie         ."
+                                     ".      sab    dom         .";
+                margin: 10px;
+                margin-bottom: 80px;
+                justify-content: center;
+
+
+                .titulo{
+                    font-family: 'Josefin Slab', serif;
+                    grid-area: titulo;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 700;
+                }
+                .jue{
+                    grid-area: jue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: solid 1px black;
+                    min-width: 200px;
+                    border-top-left-radius: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+                .vie{
+                    grid-area: vie;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: solid 1px black;
+                    min-width: 200px;
+                    border-top-right-radius: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+                .sab{
+                    grid-area: sab;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: solid 1px black;
+                    min-width: 200px;
+                    border-bottom-left-radius: 10px;
+                    text-decoration: none;
+                    color:black ;
+                }
+                .dom{
+                    grid-area: dom;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: solid 1px black;
+                    min-width: 200px;
+                    border-bottom-right-radius: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+
+            .info-content-tres{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .titulo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Josefin Slab', serif;
+                    font-weight: 900;
+                    min-height: 40px;
+                    grid-area: titulo;
+                }
+                
+                form{
+                    width: 500px;
+                
+
+                    label{
+                        display: block;
+                    }
+                      
+                    p{
+                        padding: 1em;
+                    }
+                    
+                    
+                    button, input{
+                        width: 100%;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: 0;
+                        color: #fff;
+                        border-bottom: 2px solid rgb(221, 170, 103);
+                    }
+                    
+                    button {
+                        background: burlywood;
+                        border: 0;
+                        text-transform: uppercase;
+                        padding: 1em;
+                    }
+                }
+            }
+
+        }
+    } 
+    
+
+    footer{
+	background-color: burlywood;
+	height: 100%;
+    padding: 15px;
+
+
+        .text{
+            color: black;
+        }
+
+    }
+}
+
+
+
+.img-tres{
+    max-width: 450px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 900;
+    min-height: 40px;
+    margin-top: 10px;
+}
+.parrafo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+
+
+
+
+@media screen and (min-width:800px){
+    .body .main .content .info-content-tres form button:hover,
+    .body .main .content .info-content-tres form button:focus{
+    background: rgb(218, 169, 105);
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+    }
+    .body .main .content .info-content-dos .jue:hover{
+        background-color: burlywood;
+        transition: .3s;
+    }
+    .body .main .content .info-content-dos .vie:hover{
+        background-color: burlywood;
+        transition: .3s;
+    }
+    .body .main .content .info-content-dos .sab:hover{
+        background-color: burlywood;
+        transition: .3s;
+    }
+    .body .main .content .info-content-dos .dom:hover{
+        background-color: burlywood;
+        transition: .3s;
+    }
+    .body .main .vacio{
+        height: 600px;
+    }
+}
+
+@media screen and (min-width:950px){
+    .body .main .vacio{
+    height: 700px;
+    }
+
+}
+
+
+
+
+
+
+
+
