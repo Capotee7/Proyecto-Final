@@ -253,6 +253,7 @@
 
 
 
+
 @media screen and (min-width:800px){
     .body .main .content .info-content-tres form button:hover,
     .body .main .content .info-content-tres form button:focus{
@@ -260,25 +261,6 @@
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
-    }
-    .body .main .content .info-content-dos .jue:hover{
-        background-color: burlywood;
-        transition: .3s;
-    }
-    .body .main .content .info-content-dos .vie:hover{
-        background-color: burlywood;
-        transition: .3s;
-    }
-    .body .main .content .info-content-dos .sab:hover{
-        background-color: burlywood;
-        transition: .3s;
-    }
-    .body .main .content .info-content-dos .dom:hover{
-        background-color: burlywood;
-        transition: .3s;
-    }
-    .body .main .vacio{
-        height: 600px;
     }
 }
 
@@ -289,10 +271,7 @@
 
 }
 
+@media screen and (min-width:1200px){
+    
 
-
-
-
-
-
-
+}

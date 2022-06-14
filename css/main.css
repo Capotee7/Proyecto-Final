@@ -5,9 +5,7 @@
 
 .body {
   display: grid;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   background-color: aliceblue; }
   .body #menu {
     background-color: burlywood;
@@ -59,9 +57,7 @@
           color: black; }
       .body .main .content .info-content-dos {
         display: grid;
-        grid-template-areas: "titulo titulo titulo titulo"
- ".      jue    vie         ."
- ".      sab    dom         .";
+        grid-template-areas: "titulo titulo titulo titulo" ".      jue    vie         ." ".      sab    dom         .";
         margin: 10px;
         margin-bottom: 80px;
         justify-content: center; }
@@ -150,26 +146,27 @@
     .body footer .text {
       color: black; }
 
-    .img-tres {
-        max-width: 450px;
-        display: flex;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px; }
+.img-tres {
+  max-width: 450px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
-    .titulo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Josefin Slab', serif;
-        font-weight: 900;
-        min-height: 40px;
-        margin-top: 10px; }
-    .parrafo {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        font-size: 19px; }  
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 900;
+  min-height: 40px;
+  margin-top: 10px; }
+
+.parrafo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 19px; }
 
 @media screen and (min-width: 800px) {
   .body .main .content .info-content-tres form button:hover,
@@ -177,23 +174,8 @@
     background: #daa969;
     color: #fff;
     transition: background-color 1s ease-out;
-    outline: 0; }
-  .body .main .content .info-content-dos .jue:hover {
-    background-color: burlywood;
-    transition: .3s; }
-  .body .main .content .info-content-dos .vie:hover {
-    background-color: burlywood;
-    transition: .3s; }
-  .body .main .content .info-content-dos .sab:hover {
-    background-color: burlywood;
-    transition: .3s; }
-  .body .main .content .info-content-dos .dom:hover {
-    background-color: burlywood;
-    transition: .3s; }
-  .body .main .vacio {
-    height: 600px; } }
+    outline: 0; } }
 
 @media screen and (min-width: 950px) {
   .body .main .vacio {
     height: 700px; } }
-
